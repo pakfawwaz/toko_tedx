@@ -14,7 +14,7 @@
     <style type="text/css">
         #results { padding:20px; border:1px solid; background:#ccc; }
     </style>
-<body class="hold-transition register-page">
+<body class="hold-transition register-page util-gray-100">
 <div class="register-box">
   	<?php
       if(isset($_SESSION['error'])){
@@ -35,8 +35,8 @@
         unset($_SESSION['success']);
       }
     ?>
-  	<div class="register-box-body">
-    	<p class="login-box-msg">Register a new membership</p>
+  	<div class="register-box-body util-red-100">
+    	<p class="login-box-msg util-text-white">Register a new membership</p>
 
     	<form action="register.php" method="POST">
           <div class="form-group has-feedback">
@@ -78,7 +78,7 @@
                 
             </div>
             <div>
-            <div id="results">Your captured image will appear here...</div>    
+            <div class="util-black-100 util-text-white" style="border:none" id="results">Your captured image will appear here...</div>
             </div>
             
     			<div class="col-xs-4">
@@ -87,8 +87,8 @@
       		</div>
     	</form>
       <br>
-      <a href="login.php">I already have a membership</a><br>
-      <a href="index.php"><i class="fa fa-home"></i> Home</a>
+      <a class="util-text-white" href="login.php">I already have a membership</a><br>
+      <a class="util-text-white" href="index.php"><i class="fa fa-home"></i> Home</a>
   	</div>
   	<div class="container">
     

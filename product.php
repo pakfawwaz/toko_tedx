@@ -42,7 +42,7 @@
 
 	<?php include 'includes/navbar.php'; ?>
 	 
-	  <div class="content-wrapper">
+	  <div class="content-wrapper util-gray-100 util-text-white">
 	    <div class="container">
 
 	      <!-- Main content -->
@@ -62,11 +62,11 @@
 			            			<div class="input-group col-sm-5">
 			            				
 			            				<span class="input-group-btn">
-			            					<button type="button" id="minus" class="btn btn-default btn-flat btn-lg"><i class="fa fa-minus"></i></button>
+			            					<button type="button" id="minus" class="btn btn-default btn-flat btn-lg util-black-100 util-text-white"><i class="fa fa-minus"></i></button>
 			            				</span>
-							          	<input type="text" name="quantity" id="quantity" class="form-control input-lg" value="1">
+							          	<input type="text" name="quantity" id="quantity" class="form-control input-lg util-black-100 util-text-white" value="1">
 							            <span class="input-group-btn">
-							                <button type="button" id="add" class="btn btn-default btn-flat btn-lg"><i class="fa fa-plus"></i>
+							                <button type="button" id="add" class="btn btn-default btn-flat btn-lg util-black-100 util-text-white"><i class="fa fa-plus"></i>
 							                </button>
 							            </span>
 							            <input type="hidden" value="<?php echo $product['prodid']; ?>" name="id">
@@ -84,7 +84,7 @@
 		            	</div>
 		            </div>
 		            <br>
-				    <div class="fb-comments" data-href="http://localhost/ecommerce/product.php?product=<?php echo $slug; ?>" data-numposts="10" width="100%"></div> 
+				    <div class="fb-comments" data-href="http://localhost/ecommerce/product.php?product=<?php echo $slug; ?>" data-numposts="10" width="100%"></div>
 	        	</div>
 	        	<div class="col-sm-3">
 	        		<?php include 'includes/sidebar.php'; ?>

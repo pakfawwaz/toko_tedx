@@ -1,8 +1,8 @@
 <header class="main-header">
-  <nav class="navbar navbar-static-top">
-    <div class="container">
-      <div class="navbar-header">
-        <a href="index.php" class="navbar-brand"><b>Tedx</b>ITS</a>
+  <nav class="navbar navbar-static-top util-red-100">
+    <div class="container ">
+      <div class="navbar-header ">
+        <a href="index.php" class="navbar-brand "><b>Tedx</b>ITS</a>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
           <i class="fa fa-bars"></i>
         </button>
@@ -15,7 +15,7 @@
           
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">CATEGORY <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
+            <ul class="dropdown-menu util-red-100" style="border-color:#AF0000" role="menu">
               <?php
              
                 $conn = $pdo->open();
@@ -24,7 +24,7 @@
                   $stmt->execute();
                   foreach($stmt as $row){
                     echo "
-                      <li><a href='category.php?category=".$row['cat_slug']."'>".$row['name']."</a></li>
+                      <li><a class='util-red-100 util-text-white' href='category.php?category=".$row['cat_slug']."'>".$row['name']."</a></li>
                     ";                  
                   }
                 }
@@ -53,17 +53,17 @@
         <ul class="nav navbar-nav">
           <li class="dropdown messages-menu">
             <!-- Menu toggle button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a href="#" class="dropdown-toggle util-red-100" data-toggle="dropdown">
               <i class="fa fa-shopping-cart"></i>
               <span class="label label-success cart_count"></span>
             </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have <span class="cart_count"></span> item(s) in cart</li>
+            <ul class="dropdown-menu util-red-100 util-text-white">
+              <li class="header util-red-100 util-text-white">You have <span class="cart_count"></span> item(s) in cart</li>
               <li>
                 <ul class="menu" id="cart_menu">
                 </ul>
               </li>
-              <li class="footer"><a href="cart_view.php">Go to Cart</a></li>
+              <li class="footer util-text-white util-red-100"><a class="util-text-white util-red-100" href="cart_view.php">Go to Cart</a></li>
             </ul>
           </li>
           <?php

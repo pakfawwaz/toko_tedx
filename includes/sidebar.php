@@ -1,7 +1,7 @@
 <div class="row">
-	<div class="box box-solid">
-	  	<div class="box-header with-border">
-	    	<h3 class="box-title"><b>Most Viewed Today</b></h3>
+	<div class="box box-solid util-black-100">
+	  	<div class="box-header with-border ">
+	    	<h3 class="box-title util-text-white"><b>Most Viewed Today</b></h3>
 	  	</div>
 	  	<div class="box-body">
 	  		<ul id="trending">
@@ -12,7 +12,7 @@
 	  			$stmt = $conn->prepare("SELECT * FROM products WHERE date_view=:now ORDER BY counter DESC LIMIT 10");
 	  			$stmt->execute(['now'=>$now]);
 	  			foreach($stmt as $row){
-	  				echo "<li><a href='product.php?product=".$row['slug']."'>".$row['name']."</a></li>";
+	  				echo "<li class='util-text-white'><a class='util-text-white' href='product.php?product=".$row['slug']."'>".$row['name']."</a></li>";
 	  			}
 
 	  			$pdo->close();
@@ -23,9 +23,9 @@
 </div>
 
 <div class="row">
-	<div class="box box-solid">
+	<div class="box box-solid util-black-100 util-text-white">
 	  	<div class="box-header with-border">
-	    	<h3 class="box-title"><b>Become a Subscriber</b></h3>
+	    	<h3 class="box-title"><b class="util-text-white">Become a Subscriber</b></h3>
 	  	</div>
 	  	<div class="box-body">
 	    	<p>Get free updates on the latest products and discounts, straight to your inbox.</p>
@@ -42,9 +42,9 @@
 </div>
 
 <div class="row">
-	<div class='box box-solid'>
+	<div class='box box-solid util-black-100'>
 	  	<div class='box-header with-border'>
-	    	<h3 class='box-title'><b>Follow us on Social Media</b></h3>
+	    	<h3 class='box-title'><b class="util-text-white">Follow us on Social Media</b></h3>
 	  	</div>
 	  	<div class='box-body'>
 	    	<a class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>

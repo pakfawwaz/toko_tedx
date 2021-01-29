@@ -23,14 +23,14 @@
 
 	<?php include 'includes/navbar.php'; ?>
 	 
-	  <div class="content-wrapper">
+	  <div class="content-wrapper util-gray-100">
 	    <div class="container">
 
 	      <!-- Main content -->
-	      <section class="content">
+	      <section class="content util-gray-100">
 	        <div class="row">
 	        	<div class="col-sm-9">
-		            <h1 class="page-header"><?php echo $cat['name']; ?></h1>
+		            <h1 class="util-text-white page-header"><?php echo $cat['name']; ?></h1>
 		       		<?php
 		       			
 		       			$conn = $pdo->open();
@@ -45,13 +45,15 @@
 	       						if($inc == 1) echo "<div class='row'>";
 	       						echo "
 	       							<div class='col-sm-4'>
-	       								<div class='box box-solid'>
+	       								<div class='box box-solid util-black-100'>
 		       								<div class='box-body prod-body'>
+		       								<a href='product.php?product=".$row['slug']."'>
 		       									<img src='".$image."' width='100%' height='230px' class='thumbnail'>
-		       									<h5><a href='product.php?product=".$row['slug']."'>".$row['name']."</a></h5>
+		       									<h5><a class='util-text-white' href='product.php?product=".$row['slug']."'>".$row['name']."</a></h5>
+		       								</a>
 		       								</div>
-		       								<div class='box-footer'>
-		       									<b>&#36; ".number_format($row['price'], 2)."</b>
+		       								<div class='box-footer util-black-100'>
+		       									<b class='util-text-white'>&#36; ".number_format($row['price'], 2)."</b>
 		       								</div>
 	       								</div>
 	       							</div>

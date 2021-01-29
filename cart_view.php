@@ -5,16 +5,16 @@
 
 	<?php include 'includes/navbar.php'; ?>
 	 
-	  <div class="content-wrapper">
+	  <div class="content-wrapper util-gray-100">
 	    <div class="container">
 
 	      <!-- Main content -->
 	      <section class="content">
 	        <div class="row">
 	        	<div class="col-sm-9">
-	        		<h1 class="page-header">YOUR CART</h1>
+	        		<h1 class="page-header util-text-white">YOUR CART</h1>
 	        		<div class="box box-solid">
-	        			<div class="box-body">
+	        			<div class="box-body util-black-100 util-text-white">
 		        		<table class="table table-bordered">
 		        			<thead>
 		        				<th></th>
@@ -37,7 +37,7 @@
 	        			}
 	        			else{
 	        				echo "
-	        					<h4>You need to <a href='login.php'>Login</a> to checkout.</h4>
+	        					<h4 class='util-text-white'>You need to <a href='login.php'>Login</a> to checkout.</h4>
 	        				";
 	        			}
 	        		?>

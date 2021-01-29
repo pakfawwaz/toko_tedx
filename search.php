@@ -5,7 +5,7 @@
 
 	<?php include 'includes/navbar.php'; ?>
 	 
-	  <div class="content-wrapper">
+	  <div class="content-wrapper util-gray-100 util-text-white">
 	    <div class="container">
 
 	      <!-- Main content -->
@@ -36,12 +36,14 @@
 	       						if($inc == 1) echo "<div class='row'>";
 	       						echo "
 	       							<div class='col-sm-4'>
-	       								<div class='box box-solid'>
+	       								<div class='box box-solid util-black-100'>
 		       								<div class='box-body prod-body'>
+		       								<a href='product.php?product=".$row['slug']."'>
 		       									<img src='".$image."' width='100%' height='230px' class='thumbnail'>
-		       									<h5><a href='product.php?product=".$row['slug']."'>".$highlighted."</a></h5>
+		       									<h5><a class='util-text-white' href='product.php?product=".$row['slug']."'>".$highlighted."</a></h5>
+		       									</a>
 		       								</div>
-		       								<div class='box-footer'>
+		       								<div class='box-footer util-black-100'>
 		       									<b>&#36; ".number_format($row['price'], 2)."</b>
 		       								</div>
 	       								</div>

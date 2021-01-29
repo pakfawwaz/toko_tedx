@@ -1,4 +1,4 @@
-<footer class="main-footer">
+<footer class="main-footer util-black-100 util-text-white" style="border:none">
     <div class="container">
       <div class="pull-right hidden-xs">
         <b>All rights reserved</b>

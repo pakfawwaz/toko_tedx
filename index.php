@@ -1,15 +1,15 @@
 <?php include 'includes/session.php'; ?>
 <?php include 'includes/header.php'; ?>
-<body class="hold-transition skin-blue layout-top-nav">
-<div class="wrapper">
+<body class="hold-transition skin-blue layout-top-nav ">
+<div class="wrapper util-gray-100">
 
 	<?php include 'includes/navbar.php'; ?>
 	 
-	  <div class="content-wrapper">
+	  <div class="content-wrapper util-gray-100">
 	    <div class="container">
 
 	      <!-- Main content -->
-	      <section class="content">
+	      <section class="content util-gray-100 util-text-white">
 	        <div class="row">
 	        	<div class="col-sm-9">
 	        		<?php

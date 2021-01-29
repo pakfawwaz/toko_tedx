@@ -1,6 +1,6 @@
 <?php include 'includes/session.php'; ?>
 <?php include 'includes/header.php'; ?>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page util-gray-100">
 <div class="login-box">
   	<?php
       if(isset($_SESSION['error'])){
@@ -20,8 +20,8 @@
         unset($_SESSION['success']);
       }
     ?>
-  	<div class="login-box-body">
-    	<p class="login-box-msg">Enter email associated with account</p>
+  	<div class="login-box-body util-red-100">
+    	<p class="login-box-msg util-text-white">Enter email associated with account</p>
 
     	<form action="reset.php" method="POST">
       		<div class="form-group has-feedback">
@@ -35,8 +35,8 @@
       		</div>
     	</form>
       <br>
-      <a href="login.php">I rememberd my password</a><br>
-      <a href="index.php"><i class="fa fa-home"></i> Home</a>
+      <a class="util-text-white" href="login.php">I rememberd my password</a><br>
+      <a class="util-text-white" href="index.php"><i class="fa fa-home"></i> Home</a>
   	</div>
 </div>
 	

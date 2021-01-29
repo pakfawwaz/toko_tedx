@@ -31,8 +31,8 @@
 				$subtotal = $row['price']*$row['quantity'];
 				$total += $subtotal;
 				$output .= "
-					<tr>
-						<td><button type='button' data-id='".$row['cartid']."' class='btn btn-danger btn-flat cart_delete'><i class='fa fa-remove'></i></button></td>
+					<tr class='util-black-100'>
+						<td class='util-black-100'><button type='button' data-id='".$row['cartid']."' class='btn btn-danger btn-flat cart_delete'><i class='fa fa-remove'></i></button></td>
 						<td><img src='".$image."' width='30px' height='30px'></td>
 						<td>".$row['name']."</td>
 						<td>&#36; ".number_format($row['price'], 2)."</td>

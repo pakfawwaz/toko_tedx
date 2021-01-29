@@ -5,7 +5,7 @@
   }
 ?>
 <?php include 'includes/header.php'; ?>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page util-gray-100">
 <div class="login-box">
   	<?php
       if(isset($_SESSION['error'])){
@@ -25,8 +25,8 @@
         unset($_SESSION['success']);
       }
     ?>
-  	<div class="login-box-body">
-    	<p class="login-box-msg">Sign in to start your session</p>
+  	<div class="login-box-body util-red-100">
+    	<p class="login-box-msg util-text-white">Sign in to start your session</p>
 
     	<form action="verify.php" method="POST">
       		<div class="form-group has-feedback">
@@ -44,9 +44,9 @@
       		</div>
     	</form>
       <br>
-      <a href="password_forgot.php">I forgot my password</a><br>
-      <a href="signup.php" class="text-center">Register a new membership</a><br>
-      <a href="index.php"><i class="fa fa-home"></i> Home</a>
+      <a class="util-text-white" href="password_forgot.php">I forgot my password</a><br>
+      <a class="util-text-white text-center" href="signup.php">Register a new membership</a><br>
+      <a class="util-text-white" href="index.php"><i class="fa fa-home"></i> Home</a>
   	</div>
 </div>
 	
