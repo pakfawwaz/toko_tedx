@@ -30,14 +30,15 @@
 	        			</div>
 	        		</div>
 	        		<?php
-	        			if(isset($_SESSION['user'])){
+	        			if(isset($_SESSION['user']))
+	        			{
 	        				echo "
 	        					<div id='paypal-button'></div>
 	        					<div>
 	        					<form action='upload_bayar.php' method='post' enctype='multipart/form-data'>
-                                    Select image to upload:
-                                  <input type='file' name='fileToUpload' id='fileToUpload'>
-                                  <input type='submit' value='Upload Image' name='submit'>
+                                  <label class='form-label util-text-white' for='fileToUpload'>Select image to upload:</label>
+                                  <input type='file' class='util-text-white' name='fileToUpload' id='fileToUpload'>
+                                  <button type='submit' class='btn btn-primary' style='margin-top:20px;' value='Upload Image' name='submit'>Upload Image</button>
                                 </form>
                                 </div>
 	        				";
