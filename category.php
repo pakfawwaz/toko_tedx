@@ -53,7 +53,7 @@
 		       								</a>
 		       								</div>
 		       								<div class='box-footer util-black-100'>
-		       									<b class='util-text-white'>&#36; ".number_format($row['price'], 2)."</b>
+		       									<b class='util-text-white'>&#x52;&#x70; ".number_format($row['price'], 2)."</b>
 		       								</div>
 	       								</div>
 	       							</div>

@@ -44,7 +44,7 @@
 		       									</a>
 		       								</div>
 		       								<div class='box-footer util-black-100'>
-		       									<b>&#36; ".number_format($row['price'], 2)."</b>
+		       									<b>&#x52;&#x70; ".number_format($row['price'], 2)."</b>
 		       								</div>
 	       								</div>
 	       							</div>

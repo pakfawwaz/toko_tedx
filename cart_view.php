@@ -30,17 +30,9 @@
 	        			</div>
 	        		</div>
 	        		<?php
-	        			if(isset($_SESSION['user']))
-	        			{
+	        			if(isset($_SESSION['user'])){
 	        				echo "
-	        					<div id='paypal-button'></div>
-	        					<div>
-	        					<form action='upload_bayar.php' method='post' enctype='multipart/form-data'>
-                                  <label class='form-label util-text-white' for='fileToUpload'>Select image to upload:</label>
-                                  <input type='file' class='util-text-white' name='fileToUpload' id='fileToUpload'>
-                                  <button type='submit' class='btn btn-primary' style='margin-top:20px;' value='Upload Image' name='submit'>Upload Image</button>
-                                </form>
-                                </div>
+	        					<button onclick=\"location.href='checkout-process.php'\">Checkout...</button>
 	        				";
 	        			}
 	        			else{
@@ -161,47 +153,6 @@ function getTotal(){
 		}
 	});
 }
-</script>
-<!-- Paypal Express -->
-<script>
-paypal.Button.render({
-    env: 'sandbox', // change for production if app is live,
-
-	client: {
-        sandbox:    'ASb1ZbVxG5ZFzCWLdYLi_d1-k5rmSjvBZhxP2etCxBKXaJHxPba13JJD_D3dTNriRbAv3Kp_72cgDvaZ',
-        //production: 'AaBHKJFEej4V6yaArjzSx9cuf-UYesQYKqynQVCdBlKuZKawDDzFyuQdidPOBSGEhWaNQnnvfzuFB9SM'
-    },
-
-    commit: true, // Show a 'Pay Now' button
-
-    style: {
-    	color: 'gold',
-    	size: 'small'
-    },
-
-    payment: function(data, actions) {
-        return actions.payment.create({
-            payment: {
-                transactions: [
-                    {
-                    	//total purchase
-                        amount: { 
-                        	total: total, 
-                        	currency: 'USD' 
-                        }
-                    }
-                ]
-            }
-        });
-    },
-
-    onAuthorize: function(data, actions) {
-        return actions.payment.execute().then(function(payment) {
-			window.location = 'sales.php?pay='+payment.id;
-        });
-    },
-
-}, '#paypal-button');
 </script>
 </body>
 </html>
