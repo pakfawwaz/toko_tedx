@@ -4,10 +4,10 @@ namespace Midtrans;
 
 require_once dirname(__FILE__) . '/Midtrans.php';
 //Set Your server key
-Config::$serverKey = "SB-Mid-server-J7YAcobHCTGZ7iAYg6Dw-QPh";
+Config::$serverKey = "Mid-server-53fZHdvxICHSPWGgRt3lpPX9";
 
 // Uncomment for production environment
-// Config::$isProduction = true;
+Config::$isProduction = true;
 
 // Uncomment to enable sanitization
 // Config::$isSanitized = true;
